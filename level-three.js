@@ -12,7 +12,10 @@
     repeatString("yes", 3) => "yesyesyes"
 */
 function repeatString(message, times) {
-
+ return  repeatString(message, 1);
+ return  repeatString(message, 2);
+ return repeatString(message, 3);
+  
 }
 
 /*

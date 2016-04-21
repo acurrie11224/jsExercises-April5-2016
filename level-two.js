@@ -10,7 +10,11 @@
     isHot(32) => false
 */
 function isHot(degrees) {
-
+  if (degrees >=90){
+    return true ;
+  } else {
+    return false
+  }
 }
 
 /*
@@ -22,7 +26,11 @@ function isHot(degrees) {
     sayHotMessage(32) => "It is cold today"
 */
 function sayHotMessage(degrees) {
-
+ if (isHot(degrees)){
+   return "It is hot today"
+ } else {
+    return "It is cold today"
+ }
 }
 
 /*
@@ -36,8 +44,15 @@ function sayHotMessage(degrees) {
     isHotAdv(32) => "cold"
 */
 function isHotAdv(degrees) {
-  
-}
+  if (degrees >= 73){
+    return "hot";
+  } else if (degrees > 32 && degrees <= 72 ){
+    return "just right";
+  } else {
+    return "cold";
+  }
+  }
+
 
 /*
   Check if degrees is hot using isHotAdv() store it into a variable
@@ -49,5 +64,34 @@ function isHotAdv(degrees) {
     sayHotMessageAdv(32) => "It is cold today at 32 degrees"
 */
 function sayHotMessageAdv(degrees) {
+  isHotAdv(degrees)
 
-}
+  if (degrees > 72){
+    return "It is hot today at "+ degrees + " degrees";
+  }  else if (degrees > 32 && degrees <= 72 ){
+    return "It is just right today at " + degrees + " degrees";
+    } else if (degrees <= 32) {
+      return "It is cold today at " + degrees + " degrees";
+    }
+     
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
